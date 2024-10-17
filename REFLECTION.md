@@ -8,7 +8,7 @@
 
 -   Name 1  : Jing Li 
 -   Name 2  : Khoa Anh Vo
--   Name 3  : Rubalpreet Kaur
+-   Name 3  : Rubalpreet Kaur Brar
 
 ## Member Contributions:
 
