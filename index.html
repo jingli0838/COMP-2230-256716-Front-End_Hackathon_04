@@ -4,12 +4,55 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css" />
-        <title>Customer Survey Form</title>
+        <title>Questionare</title>
     </head>
     <body>
-        <form id="customerSurveyForm" action="#">
-            <h1>Life in Winnepeg Form</h1>
-            <div></div>
+        <form id="questionare" action="#">
+            <h1>Life in Winnipeg</h1>
+            <div class="input-group">
+                <div class="input-group-name">
+                    <p>Please enter your name.</p>
+                    <label for="userName">User Name:</label>
+                    <input type="text"  placeholder="Your Name" id="userName" name="userName">
+                </div>
+                <div class="input-group-email">
+                    <p>Please enter your email address.</p>
+                    <label for="userEmail">Email:</label>
+                    <input type="email"  placeholder="Your Email" id="userEmail" name="userEmail">
+                </div>
+                <div class="input-group-fruit">
+                    <p>What is your favorite fruit in Winnipeg?</p>
+                    <div class = "fruit-radioes">
+                        <label for="apple">Apple</label>
+                        <input type="radio" name="fruit" id="apple" value="apple">
+
+                        <label for="grape">Grape</label>
+                        <input type="radio" name="fruit" id="grape" value="grape">  
+
+                        <label for="cherry">Cherry </label>
+                        <input type="radio" name="fruit" id="cherry" value="cherry">
+
+                        <label for="orange">Orange</label> 
+                        <input type="radio" name="fruit" id="orange" value="orange">
+                    </div>
+                </div> 
+                <div class="input-group-vegetable">
+                    <p>What is your favorite vagetable in Winnipeg?</p>
+                    <div class = "vegetable-radioes">
+                        <label for="lettuce">Lettuce</label>
+                        <input type="radio" name="vegetable" id="lettuce" value="lettuce">
+
+                        <label for="broccoli">Broccoli</label>
+                        <input type="radio" name="vegetable" id="broccoli" value="broccoli">  
+
+                        <label for="cucumber">Cucumber </label>
+                        <input type="radio" name="vegetable" id="cucumber" value="cucumber">
+
+                        <label for="mushrooms">Mushrooms</label> 
+                        <input type="radio" name="vegetable" id="mushrooms" value="mushrooms">
+                    </div>
+                </div> 
+            </div>
             <button type="submit">Submit</button>
         </form>
         <div class="end">
