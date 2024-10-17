@@ -8,6 +8,7 @@ const inputGroupNameNode = document.querySelector(".input-group-name");
 const inputGroupEmailNode = document.querySelector(".input-group-email");
 const inputGroupFruitNode = document.querySelector(".input-group-fruit");
 const inputGroupVegetable = document.querySelector(".input-group-vegetable");
+const endNode = document.querySelector(".end");
 
 let nameErrorMessage = "";
 let emailErrorMessage = "";
@@ -33,8 +34,13 @@ formNode.addEventListener("submit",(event) => {
         showInputError(inputGroupFruitNode, fruitErrorMessage);
     }
 
-    if(!validateRadioVegetable){
+    if(!validateRadioVegetable()){
         showInputError(inputGroupVegetable,vegetableErrorMessage)};
+
+    if(validateUserName() && validateUserEmail() && validateRadioFruit() && validateRadioVegetable()){
+        endNode.style.display = "flex";
+        formNode.style.display = "none";
+    }
     
 
 });
@@ -108,7 +114,7 @@ function validateRadioVegetable(){
 function validateRadioFruit(){
     const allFruitRadioes = document.querySelectorAll('input[name = "fruit"]');
     for(let i=0; i<allFruitRadioes.length; i++){
-        if(allFruitRadioes[i]){
+        if(allFruitRadioes[i].checked){
             return true;
         }
     }
