@@ -41,6 +41,11 @@ formNode.addEventListener("submit",(event) => {
         endNode.style.display = "flex";
         formNode.style.display = "none";
     }
+
+    // Validate all checkbox input
+    validateCheckboxDrink();
+
+    validateCheckboxMeal();
     
 
 });
@@ -122,6 +127,29 @@ function validateRadioFruit(){
     return false;
 
 }
+
+// Validator for question 3 & 4
+function validateCheckboxDrink() {
+    const checkedAnswer = document.querySelectorAll('input[name="drink"]:checked');
+    if (checkedAnswer.length !== 3) {
+        const errorMessage = document.getElementById('drink-error');
+        errorMessage.textContent = 'Please select exactly 3 options.';
+        errorMessage.className = 'error-message';
+        errorMessage.setAttribute("role", "alert");
+    };
+};
+
+function validateCheckboxMeal() {
+    const checkedAnswer = document.querySelectorAll('input[name="meal"]:checked');
+    if (checkedAnswer.length !== 3) {
+        const errorMessage = document.getElementById('meal-error');
+        errorMessage.textContent = 'Please select exactly 3 options.';
+        errorMessage.className = 'error-message';
+        errorMessage.setAttribute("role", "alert");
+    };
+};
+
+
 
 
 function escapeHTML(input) {
