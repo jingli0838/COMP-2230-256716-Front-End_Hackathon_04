@@ -18,7 +18,8 @@
 
 ### Name 2: Khoa Anh Vo
 
--   Was responsible for [HTML and js for the second two questions], focusing on [specific HTML elements].
+-   Was responsible for [HTML and js for the second set of two questions], 
+-   Adjusted the height of the header and style the choice for accessibility.
 
 ### Name 3: Rubalpreet Kaur
 

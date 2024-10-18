@@ -21,7 +21,7 @@
                     <input type="email"  placeholder="Your Email" id="userEmail" name="userEmail">
                 </div>
                 <div class="input-group-fruit">
-                    <p>What is your favorite fruit in Winnipeg?</p>
+                    <p>1/ What is your favorite fruit in Winnipeg?</p>
                     <div class = "fruit-radioes">
                         <label for="apple">Apple</label>
                         <input type="radio" name="fruit" id="apple" value="apple">
@@ -37,7 +37,7 @@
                     </div>
                 </div> 
                 <div class="input-group-vegetable">
-                    <p>What is your favorite vagetable in Winnipeg?</p>
+                    <p>2/ What is your favorite vagetable in Winnipeg?</p>
                     <div class = "vegetable-radioes">
                         <label for="lettuce">Lettuce</label>
                         <input type="radio" name="vegetable" id="lettuce" value="lettuce">
@@ -52,6 +52,45 @@
                         <input type="radio" name="vegetable" id="mushrooms" value="mushrooms">
                     </div>
                 </div> 
+
+                <!-- Drinks questions -->
+                <div class="input-group-drink">
+                    <p>3/ Select your favorite drinks in Winnipeg?</p>
+                    <div class = "favor-drinks">
+                        <label for="dark-ale">Fort Garry Dark Ale</label>
+                        <input type="checkbox" name="drink" id="dark-ale" value="dark-ale">
+
+                        <label for="cocktail">Tall Grass Prairie Caesar</label>
+                        <input type="checkbox" name="drink" id="cocktail" value="cocktail">  
+
+                        <label for="latte">Cinnabomb Latte</label>
+                        <input type="checkbox" name="drink" id="latte" value="latte">
+
+                        <label for="honey">Bee Maid Honey Mead</label> 
+                        <input type="checkbox" name="drink" id="honey" value="honey">
+                    </div>
+                    <div id="drink-error"><!-- Error message will be injected here --></div>
+                </div>
+
+                <!-- Meals questions -->
+                <div class="input-group-meals">
+                    <p>4/ Select your favorite meals in Winnipeg?</p>
+                    <div class = "favor-meals">
+                        <label for="burger">Bison Burger</label>
+                        <input type="checkbox" name="meal" id="burger" value="burger">
+
+                        <label for="meat-pie">Tourtière</label>
+                        <input type="checkbox" name="meal" id="meat-pie" value="meat-pie">  
+
+                        <label for="fries">Poutine</label>
+                        <input type="checkbox" name="meal" id="fries" value="fries">
+
+                        <label for="fish">Pan Fried Pickerel</label> 
+                        <input type="checkbox" name="meal" id="fish" value="fish">
+                    </div>
+                    <div id="meal-error"><!-- Error message will be injected here --></div>
+                </div>
+                
             </div>
             <button type="submit">Submit</button>
         </form>
